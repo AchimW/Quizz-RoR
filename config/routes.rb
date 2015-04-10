@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
+<<<<<<< HEAD
   get 'pages/home'
+=======
+  #resource :home, only: [:show]
+
+  #get 'pages/home'
+>>>>>>> aaa32c72e320305953b7479ee1942bdee3e4ac47
 
   get 'pages/about'
 
