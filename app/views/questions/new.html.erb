@@ -1,0 +1,12 @@
+<h1> New Question </h1>
+<div>
+	<%= form_for @question do |f|%>
+		<%= f.text_field :question, placeholder: 'Frage eingeben'%> 
+		<%= f.text_field :answer1, placeholder: 'richtige Antwort'%>
+		<%= f.text_field :answer2, placeholder: 'falsche Antwort 1'%> 
+		<%= f.text_field :answer3, placeholder: 'falsche Antwort 2'%>
+		<%= f.text_field :answer4, placeholder: 'falsche Antwort 3'%>
+		<%= f.submit%>
+	<% end %>
+
+</div>

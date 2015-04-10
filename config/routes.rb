@@ -4,13 +4,11 @@ Rails.application.routes.draw do
 
   get 'pages/about'
 
-  get 'pages/questions'
-
-  get 'pages/score'
-
-  get 'pages/new_question'
+  get 'score/score'
 
   root 'pages#home'
+
+  resources :questions
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
