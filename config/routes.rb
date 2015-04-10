@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'pages/home'
 
   get 'pages/about'
@@ -6,6 +7,8 @@ Rails.application.routes.draw do
   get 'pages/questions'
 
   get 'pages/score'
+
+  get 'pages/new_question'
 
   root 'pages#home'
 

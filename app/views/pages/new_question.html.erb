@@ -1,1 +1,11 @@
 <h1> New Question </h1>
+<div>
+	<%= text_field_tag 'Frage', nil, placeholder: 'Frage eingeben'%> </br>	
+	<%= text_field_tag 'Antwort1', nil, placeholder: 'richtige Antwort'%>
+	<%= text_field_tag 'Antwort2', nil, placeholder: 'falsche Antwort 1'%> </br>
+	<%= text_field_tag 'Antwort3', nil, placeholder: 'falsche Antwort 2'%>
+	<%= text_field_tag 'Antwort4', nil, placeholder: 'falsche Antwort 3'%>
+
+</div>
+
+<%= button_tag "speichern", data: { disable_with: "Please wait..." }%>
