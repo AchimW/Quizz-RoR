@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
   #resource :home, only: [:show]
-  root "pages#home"
 
   #get 'pages/home'
 
