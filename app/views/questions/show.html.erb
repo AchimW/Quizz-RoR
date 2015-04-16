@@ -1,6 +1,6 @@
 <%= label_tag @question.question %>
 
-	<%= button_tag 'Antwort1'%>
-	<%= button_tag 'Antwort2'%>
-	<%= button_tag 'Antwort3'%>
-	<%= button_tag 'Antwort4'%>
+<%= button_tag @question.answer1 #, @question, :method => :show %>
+<%= button_tag @question.answer2 %>
+<%= button_tag @question.answer3 %>
+<%= button_tag @question.answer4 %>

@@ -5,18 +5,18 @@
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
         <%= csrf_meta_tags %>
-        
+
     </head>
     <body>
-    	<!-- Hier kommt die Navigation-->
-    	<div>
-            <%= link_to "home", 'home'%>
-    		<%= link_to "questions", 'questions'%>
-    		<%= link_to "score", 'score'%>
-    		<%= link_to "new Q", 'questions/new' %>
-    	</div>
+        <!-- Hier kommt die Navigation-->
+        <div>
+            <%= link_to "home", root_path %>
+            <%= link_to "questions", question_path(:id) %>
+            <%= link_to "score", score_score_path %>
+            <%= link_to "new Q", new_question_path %>
+        </div>
 
-    	
+
         <%= yield %>
 
     </body>

@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
+  root 'pages#home'
+
   get 'pages/about'
 
   get 'score/score'
 
-  root 'pages#home'
+  #get 'questions/:id' => 'questions#show'
 
   resources :questions
 
