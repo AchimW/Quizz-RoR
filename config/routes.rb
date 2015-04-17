@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get 'score/score'
 
-  #get 'questions/:id' => 'questions#show'
+  #get 'pages/questions' => 'questions#show'
 
   resources :questions
 
